@@ -1,0 +1,31 @@
+{
+  "name": "student-records-management-system",
+  "version": "1.0.0",
+  "description": "![Database Schema](https://img.shields.io/badge/Database-MySQL-blue)\r ![License](https://img.shields.io/badge/License-MIT-green)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambagwa/student-records-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambagwa/student-records-management-system/issues"
+  },
+  "homepage": "https://github.com/ambagwa/student-records-management-system#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

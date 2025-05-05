@@ -1,6 +1,8 @@
 # Student Records Database System
 
 ![Database Schema](https://img.shields.io/badge/Database-MySQL-blue)
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Express](https://img.shields.io/badge/Express-5.x-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Overview
@@ -39,3 +41,50 @@ A comprehensive MySQL database system for managing student records in an educati
 | `program_courses` | Program requirements |
 | `student_payments` | Financial transactions |
 | `student_documents` | Academic documents |
+
+# Student Records Management System API
+
+A RESTful API for managing student records, programs, and enrollments built with Node.js, Express, and MySQL.
+
+## Prerequisites
+
+- Node.js 18.x or higher
+- MySQL 8.0+ or compatible database
+- npm 9.x or yarn
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/student-records-api.git
+   cd student-records-api
+   ```
+
+2. Install dependencies
+    ```bash
+    npm install
+    ```
+
+3.Set up database:
+    ```bash
+    mysql -u root -p < database_schema.sql
+    ```
+
+4. Configure environment variables
+    ```
+    # Database Configuration
+    DB_HOST=localhost
+    DB_PORT=3306
+    DB_USER=your_db_username
+    DB_PASSWORD=your_db_password
+    DB_NAME=student_records
+
+    # Server Configuration
+    PORT=3000
+    JWT_SECRET=your_jwt_secret_here
+    NODE_ENV=development
+    ```
+
+5. Start the server 
+    ```bash
+    npm run dev
+    ```
